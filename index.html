@@ -1,38 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Além do código</title>
-</head>
-<body>
-    <div class="content">
-        <div class="slides">
-            <input type="radio" name="slide" id="slide1" checked>
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <input type="radio" name="slide" id="slide4">
-            <input type="radio" name="slide" id="slide5">
-            <div class="slide s1">
-                <img src="./1.jpg" alt="">
+<html lang="pr-BR">
+    <head>  
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Dr3am</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="./style.css"/>
+        <font face="Montserrat">
+        
+        <!--Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <header id="event-description">
+            <div id="disclaimer">
+                <h2><b>Dr3am</h2></b>
+                <p class="about-event"><font color="white">
+                    Um evento para revolucionar sua criatividade
+                </p></font>
+                <p><font color="white">Data do evento:</font></p>
+                <p class="event-date">Domingo, 23 de outubro, a partir das 14h </p>        
             </div>
-            <div class="slide">
-                <img src="./2.jpg" alt="">
+            <div id="subscripion-form">
+                <p><font color="white">Preencha o formulário para receber os detalhes do evento</p>
+                </font>
+                    <form>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="phone" placeholder="Número de Whatsapp" />
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Principal interesse</label>
+                        <select name="interest">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="apartment">Apartamentos</option>
+                            <option value="house">Casa</option>
+                            <option value="garden">Jardins</option>
+                            <option value="other">Outros</option>
+                        <select>   
+                    </div>
+                    <font color="#eb1ccc">
+                    <input type="submit" class="btn" value="Quero me inscrever"></font>        
+                </form>
             </div>
-            <div class="slide">
-                <img src="./3.jpg" alt="">
+        </header>
+        <section id="key-benefits">
+            <h2>O que você vai aprender:</h2>
+            <div class="benefits">
+              <div class="benefit">
+                <div id="benefit-1" class="benefit-img"></div>
+                <p>
+                  Alguma coisa muito legal, que vai fazer a diferença na vida do
+                  participante.
+                </p>
+              </div>
+              <div class="benefit">
+                <div id="benefit-2" class="benefit-img"></div>
+                <p>
+                  Alguma coisa muito legal, que vai fazer a diferença na vida do
+                  participante.
+                </p>
+              </div>
+              <div class="benefit">
+                <div id="benefit-3" class="benefit-img"></div>
+                <p>
+                  Alguma coisa muito legal, que vai fazer a diferença na vida do
+                  participante.
+                </p>
+              </div>
+            </div>  
+        </section>
+        <section id="location">
+            <div class="address">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div id="address-details">
+                    <p>Rua F, 2022</p>
+                    <p>Bairro Cajueiro</p>
+                    <p>Abertura: 14h</p>
+                </div>
             </div>
-            <div class="slide">
-                <img src="./4.jpg" alt="">
-        </div>
-        <div class="navegation">
-            <label for="slide1" class="bar"></label>
-            <label for="slide2" class="bar"></label>
-            <label for="slide3" class="bar"></label>
-            <label for="slide4" class="bar"></label>
-        </div>
-    </div>
-</body>
+            <div id="about-location">
+                <h3><b>Local de destaque</b></h3>
+                <p>O evento será realizado em um local prestigiado pelos amantes de Design de Interiores, onde teremos exemplos de vários ambientes, tanto internos como externos.</p>
+            </div>
+        </section>
+        <section id="details">
+            <div class="detail" id="detail-1">
+                <img src="./hrz-3.jpg" alt="Sala decoraca em tons claros">
+                <div class="detail-description">
+                    <h3>Conheça os ambientes que você vai aprender a decorar</h3>
+                </div>
+            </div>
+            <div class="detail" id="detail-2">
+                <div class="detail-description">
+                    <h3>Detalhes</h3>
+                    <ul>
+                        <li>Posicionameto</li>
+                        <li>Aproveitamento de espaços</li>
+                        <li>Combinação de cores</li>
+                        <li>Organização</li>
+                        <li>E muito mais...</li>
+                    </ul>
+                </div>
+                <img src="./hrz-4.jpg" alt="Sala de jantar decorada">
+            </div>
+            <div class="detail" id="detail-3">
+                <img src="./hrz-5.jpg" alt="Sala decorada em tons escuros">
+                <div class="detail-description">
+                    <h3>Objetos</h3>
+                    <ul>
+                        <li>Cadeiras</li>
+                        <li>Mesas</li>
+                        <li>Espelhos</li>
+                        <li>Plantas</li>
+                        <li>Cortinas</li>
+                        <li>E muito mais...</li>
+                    </ul>
+                </div>
+            </div>    
+        </section>    
+        <section id="cta">
+            <h3>Gostou? Então se inscreva:</h3>
+            <button class="btn">Solicitar Incrição</button>
+        </section>
+        <footer id="footer">
+            <h3><b>Dr3am</b></h3>
+            <p>A evoluçã da decoração de Interiores</p>
+            <p><span>Entre em contato:</span> oi@dr3am.com.br</p>
+            <p><span>Ou pelo telefone:</span> (75)98140-8153</p>
+        </footer>    
+    </body>
+    </font>
 </html>
